@@ -1,1 +1,1 @@
-# budget-calculator
+user-friendly Budgeting Calculator that enables users to efficiently plan and track their finances. This includes multiple income/expense inputs, visualizations (pie chart, bar chart), savings goals, personalized insights, and optional data storage.
