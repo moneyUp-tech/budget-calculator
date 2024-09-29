@@ -1,35 +1,94 @@
+/* General body styling */
 body {
-    background-color: darkgreen;
+    background-color: #014421;  /* Dark Green Background */
     color: white;
     font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
   
-  .container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  h1, h2 {
-    color: gold;
-  }
-  
-  input {
-    display: block;
-    margin: 10px 0;
-    padding: 8px;
+  /* Calculator container styles */
+  .calculator-container {
+    background-color: #1f2f1b;  /* Darker green for contrast */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
     width: 100%;
+    text-align: center;
+  }
+  
+  /* Heading styles */
+  h1, h2 {
+    color: gold;  /* Gold for headings */
+  }
+  
+  /* Input and button styling */
+  input {
+    display: inline-block;
+    width: calc(70% - 20px);
+    margin: 10px 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e4938;  /* Dark Green Input Background */
+    color: white;
+    font-size: 1em;
+  }
+  
+  .expense-amount {
+    width: calc(30% - 20px);  /* Different width for expense amount */
+  }
+  
+  .currency-label {
+    display: inline-block;
+    color: lightgray;
+    font-size: 1em;
   }
   
   button {
-    background-color: darkblue;
+    padding: 10px 20px;
+    background-color: #013a63;  /* Dark Blue Buttons */
     color: white;
     border: none;
-    padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
+    font-size: 1em;
   }
   
   button:hover {
-    background-color: gold;
+    background-color: gold;  /* Gold button on hover */
+    color: black;
+  }
+  
+  /* Section styling for spacing */
+  .input-section {
+    margin-bottom: 20px;
+  }
+  
+  /* Expense rows styling */
+  .expense-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Chart section styling */
+  .chart-section {
+    margin-top: 20px;
+  }
+  
+  /* Summary section */
+  #summary {
+    margin-top: 30px;
+  }
+  
+  #summary p {
+    font-size: 1.2em;
+    margin: 10px 0;
   }
   

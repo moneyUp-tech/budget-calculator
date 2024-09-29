@@ -7,45 +7,48 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
+  <div class="calculator-container">
     <h1>Budgeting Calculator</h1>
-    
+
     <form id="budget-form">
       <!-- Income Section -->
-      <div>
+      <div class="input-section">
         <h2>Income</h2>
-        <input type="number" placeholder="Salary" id="salary">
-        <input type="number" placeholder="Freelance" id="freelance">
-        <!-- Button to add more income sources if needed -->
-        <button type="button" id="add-income">Add Income</button>
+        <input type="number" placeholder="Salary (KShs)" id="salary">
+        <input type="number" placeholder="Freelance (KShs)" id="freelance">
       </div>
       
       <!-- Expense Section -->
-      <div>
+      <div class="input-section" id="expenses-section">
         <h2>Expenses</h2>
-        <input type="number" placeholder="Rent" id="rent">
-        <input type="number" placeholder="Groceries" id="groceries">
-        <input type="number" placeholder="Entertainment" id="entertainment">
-        <!-- Button to add more expense categories -->
-        <button type="button" id="add-expense">Add Expense</button>
+
+        <!-- Default Expense Input -->
+        <div class="expense-row">
+          <input type="text" placeholder="Expense Name" class="expense-name">
+          <input type="number" placeholder="Amount" class="expense-amount">
+          <span class="currency-label">KShs</span>
+        </div>
+
+        <!-- Button to add more expense rows -->
+        <button type="button" id="add-expense" class="add-button">+ Add Expense</button>
       </div>
 
       <!-- Savings Goal -->
-      <div>
+      <div class="input-section">
         <h2>Savings Goal</h2>
-        <input type="number" placeholder="Savings Goal" id="savings-goal">
+        <input type="number" placeholder="Savings Goal (KShs)" id="savings-goal">
       </div>
 
-      <button type="submit">Calculate</button>
+      <button type="submit" class="submit-button">Calculate</button>
     </form>
 
     <!-- Charts Section -->
-    <div>
+    <div class="chart-section">
       <h2>Expense Breakdown</h2>
       <canvas id="expense-chart"></canvas> <!-- For Pie Chart -->
     </div>
     
-    <div>
+    <div class="chart-section">
       <h2>Income vs Expenses</h2>
       <canvas id="income-vs-expense-chart"></canvas> <!-- For Bar Chart -->
     </div>
@@ -61,3 +64,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
