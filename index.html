@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budgeting Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Budgeting Calculator</h1>
+    
+    <form id="budget-form">
+      <!-- Income Section -->
+      <div>
+        <h2>Income</h2>
+        <input type="number" placeholder="Salary" id="salary">
+        <input type="number" placeholder="Freelance" id="freelance">
+        <!-- Button to add more income sources if needed -->
+        <button type="button" id="add-income">Add Income</button>
+      </div>
+      
+      <!-- Expense Section -->
+      <div>
+        <h2>Expenses</h2>
+        <input type="number" placeholder="Rent" id="rent">
+        <input type="number" placeholder="Groceries" id="groceries">
+        <input type="number" placeholder="Entertainment" id="entertainment">
+        <!-- Button to add more expense categories -->
+        <button type="button" id="add-expense">Add Expense</button>
+      </div>
+
+      <!-- Savings Goal -->
+      <div>
+        <h2>Savings Goal</h2>
+        <input type="number" placeholder="Savings Goal" id="savings-goal">
+      </div>
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <!-- Charts Section -->
+    <div>
+      <h2>Expense Breakdown</h2>
+      <canvas id="expense-chart"></canvas> <!-- For Pie Chart -->
+    </div>
+    
+    <div>
+      <h2>Income vs Expenses</h2>
+      <canvas id="income-vs-expense-chart"></canvas> <!-- For Bar Chart -->
+    </div>
+
+    <!-- Summary -->
+    <div id="summary">
+      <h2>Financial Summary</h2>
+      <p id="remaining-budget"></p>
+      <p id="savings-progress"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
